@@ -10,9 +10,6 @@ class Matrix(var matrix: Array<Array<Int>>): Serializable {
         val r1c0 = (matrix[1][0] * m.matrix[0][0]) + (matrix[1][1] * m.matrix[1][0])
         val r1c1 = (matrix[1][0] * m.matrix[0][1]) + (matrix[1][1] * m.matrix[1][1])
 
-        val firstColumn = intArrayOf(r0c0, r1c0)
-        val secondColumn = intArrayOf(r0c1, r1c1)
-
         val initMatrix = Matrix(Array(2) { Array(2) { 0 } })
 
         initMatrix.matrix[0][0] = r0c0
@@ -22,8 +19,4 @@ class Matrix(var matrix: Array<Array<Int>>): Serializable {
 
         return initMatrix
     }
-
-
-
-    //= Matrix(intArrayOf((matrix[0][0] * m.matrix[0][0]), (matrix[0][1] * m.matrix[1][0])), )
 }
