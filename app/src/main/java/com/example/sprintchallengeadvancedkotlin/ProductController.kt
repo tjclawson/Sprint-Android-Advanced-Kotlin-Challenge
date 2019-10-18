@@ -20,17 +20,25 @@ class ProductController(val bundle: Bundle): Controller() {
     override fun onChangeEnded(changeHandler: ControllerChangeHandler, changeType: ControllerChangeType) {
         super.onChangeEnded(changeHandler, changeType)
 
-        val myInt = bundle.getInt("KEY")
+        val myMatrixProduct = bundle.getSerializable("KEY") as Matrix
+        val result = myMatrixProduct.matrix
 
         val tvProductRowOneColOne = view?.findViewById<TextView>(R.id.product_r1_c1)
         val tvProductRowOneColTwo = view?.findViewById<TextView>(R.id.product_r1_c2)
         val tvProductRowTwoColOne = view?.findViewById<TextView>(R.id.product_r2_c1)
         val tvProductRowTwoColTwo = view?.findViewById<TextView>(R.id.product_r2_c2)
 
-        tvProductRowOneColOne?.text = myInt.toString()
-        tvProductRowOneColTwo?.text = myInt.toString()
-        tvProductRowTwoColOne?.text = myInt.toString()
-        tvProductRowTwoColTwo?.text = myInt.toString()
+        tvProductRowOneColOne?.text = result[0][0].toString()
+        tvProductRowOneColTwo?.text = result[0][1].toString()
+        tvProductRowTwoColOne?.text = result[1][0].toString()
+        tvProductRowTwoColTwo?.text = result[1][1].toString()
+
+        println(result[0][0].toString())
+        println(result[0][1].toString())
+        println(result[1][0].toString())
+        println(result[1][1].toString())
+
+
     }
 
 }
