@@ -33,12 +33,22 @@ class ProductController(val bundle: Bundle): Controller() {
         tvProductRowTwoColOne?.text = result[1][0].toString()
         tvProductRowTwoColTwo?.text = result[1][1].toString()
 
-        println(result[0][0].toString())
-        println(result[0][1].toString())
-        println(result[1][0].toString())
-        println(result[1][1].toString())
+        val testMatrix = Matrix(Array(3) { IntArray(3) { 0 } }, 3, 3)
+        val testMatrixTwo = Matrix(Array(3) { IntArray(1) { 0 } }, 3, 1)
 
+        testMatrix.matrix[0][0] = 1
+        testMatrix.matrix[0][1] = 2
+        testMatrix.matrix[0][2] = 3
+        testMatrix.matrix[1][0] = 4
+        testMatrix.matrix[1][1] = 5
+        testMatrix.matrix[1][2] = 6
+        testMatrix.matrix[2][0] = 7
+        testMatrix.matrix[2][1] = 8
+        testMatrix.matrix[2][2] = 9
+
+        testMatrixTwo.matrix[0][0] = 1
+        testMatrixTwo.matrix[1][0] = 2
+        testMatrixTwo.matrix[2][0] = 3
 
     }
-
 }
