@@ -16,6 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
+            android:id="@+id/product_r1_c1"
             android:layout_width="wrap_content"
             android:text="5"
             android:textSize="20sp"
@@ -24,6 +25,7 @@
             android:layout_weight="1"/>
 
         <TextView
+            android:id="@+id/product_r1_c2"
             android:layout_width="wrap_content"
             android:text="5"
             android:textSize="20sp"
@@ -43,6 +45,7 @@
         app:layout_constraintTop_toBottomOf="@+id/product_ll_matrix_row_one">
 
         <TextView
+            android:id="@+id/product_r2_c1"
             android:layout_width="wrap_content"
             android:text="5"
             android:textSize="20sp"
@@ -51,6 +54,7 @@
             android:layout_weight="1"/>
 
         <TextView
+            android:id="@+id/product_r2_c2"
             android:layout_width="wrap_content"
             android:text="5"
             android:textSize="20sp"

@@ -51,7 +51,7 @@
             android:layout_weight="1"/>
 
         <EditText
-            android:id="@+id/et_m_r2_c2"
+            android:id="@+id/et_m1_r2_c2"
             android:layout_width="wrap_content"
             android:text="5"
             android:textSize="20sp"
