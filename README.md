@@ -18,7 +18,7 @@ Good luck!
 
 This screen recording shows how the app should look. Use this when designing your test cases. 
 
-<img src="congress_debug_recording.gif" width="300">
+<img src="MatricesRecording.gif" width="300">
 
 ## Requirements
 
