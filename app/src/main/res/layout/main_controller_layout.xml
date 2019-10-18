@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_first_matrix_row_one"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/et_m1_r1_c1"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/et_m1_r1_c2"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/product_ll_matrix_row_two"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ll_first_matrix_row_one">
+
+        <EditText
+            android:id="@+id/et_m1_r2_c1"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/et_m1_r2_c2"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_multiply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiply"
+        app:layout_constraintTop_toBottomOf="@+id/product_ll_matrix_row_two"/>
+
+    <LinearLayout
+        android:id="@+id/ll_second_matrix_row_one"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/button_multiply">
+
+        <EditText
+            android:id="@+id/et_m2_r1_c1"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/et_m2_r1_c2"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_second_matrix_row_two"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/ll_second_matrix_row_one">
+
+        <EditText
+            android:id="@+id/et_m2_r2_c1"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/et_m2_r2_c2"
+            android:layout_width="wrap_content"
+            android:text="5"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
