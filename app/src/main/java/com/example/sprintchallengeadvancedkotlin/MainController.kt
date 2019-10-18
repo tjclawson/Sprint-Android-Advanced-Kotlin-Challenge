@@ -33,8 +33,8 @@ class MainController : Controller() {
         val etMatrixTwoRowTwoColTwo = view?.findViewById<EditText>(R.id.et_m2_r2_c2)
 
 
-        val myMatrixOne = Matrix(Array(2) {Array(2) { 0 } })
-        val myMatrixTwo = Matrix(Array(2) {Array(2) { 0 } })
+        val myMatrixOne = Matrix(Array(2) {IntArray(2) { 0 } },2 ,2)
+        val myMatrixTwo = Matrix(Array(2) {IntArray(2) { 0 } }, 2, 2)
 
 
         buttonMultiply?.setOnClickListener {
