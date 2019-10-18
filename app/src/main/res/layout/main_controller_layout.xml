@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:id="@+id/product_ll_matrix_row_one"
+        android:id="@+id/ll_first_matrix_row_one"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -39,7 +39,7 @@
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/product_ll_matrix_row_one">
+        app:layout_constraintTop_toBottomOf="@+id/ll_first_matrix_row_one">
 
         <EditText
             android:id="@+id/et_m1_r2_c1"
